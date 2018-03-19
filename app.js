@@ -5,7 +5,6 @@ app.get('/', function(req, res){
   res.send('Hello, second version !');
 });
 
-septenrspoc'esro',rsoutem,s'ikn
 setInterval(() => {
   console.log(new Date().toISOString());
 }, 1000);
