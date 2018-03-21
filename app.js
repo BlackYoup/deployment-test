@@ -6,7 +6,7 @@ app.get('/', function(req, res){
 });
 
 setInterval(() => {
-  console.log(new Date().toISOString());
+  console.log(process.env.INSTANCE_NUMBER, new Date().toISOString());
 }, 1000);
 
 app.listen(process.env.PORT);
