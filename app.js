@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(req, res){
-  res.send('Hello, second version !');
+  res.send(`Hello, second version ! ${process.env.INSTANCE_NUMBER}`);
 });
 
 setInterval(() => {
