@@ -10,8 +10,5 @@
     "start": "node app.js"
   },
   "author": "",
-  "license": "ISC",
-  "engines": {
-    "node": "*"
-  }
+  "license": "ISC"
 }
