@@ -10,4 +10,4 @@ setInterval(() => {
 }, 1000);
 
 app.listen(process.env.PORT);
-console.log('hello updated');
+console.log('hello updated2');
