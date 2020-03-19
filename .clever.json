@@ -1,1 +1,1 @@
-{"apps":[{"app_id":"app_402a570b-40d6-4729-b682-80cee33efafe","deploy_url":"git+ssh://git@push.par.clever-cloud.com/app_402a570b-40d6-4729-b682-80cee33efafe.git","name":"Deploy test","alias":"deploy-test"}]}
+{"apps":[{"app_id":"app_402a570b-40d6-4729-b682-80cee33efafe","deploy_url":"https://push-par-clevercloud-customers.services.clever-cloud.com/app_402a570b-40d6-4729-b682-80cee33efafe.git","name":"Deploy test","alias":"Deploy-test"}]}
