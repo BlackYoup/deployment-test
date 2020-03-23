@@ -1,4 +1,6 @@
 var express = require('express');
+const lodash = require("lodash");
+console.log('loadsh:', lodash);
 var app = express();
 
 app.get('/', function(req, res){
