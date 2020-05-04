@@ -8,6 +8,10 @@ app.get('/', function(req, res){
 });
 
 app.get('/timeout', function(req, res) {
+  if (req.headers['sozu-id']) {
+    console.log('Sozu request', new Date());
+  }
+
   setTimeout(() => {
     res.status(200);
     res.end();
