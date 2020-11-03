@@ -4,7 +4,14 @@ console.log('loadsh:', lodash);
 var app = express();
 
 app.get('/', function(req, res){
-  res.send(`Hello, second version ! ${process.env.INSTANCE_NUMBER}`);
+  res.send(`
+  <html>
+    <body>
+      Hello, second version ! ${process.env.INSTANCE_NUMBER}
+      <img src="http://blackyoup.cellar-c2.services.clever-cloud.com/hltv.png" />
+    </body>
+  </html>
+`);
 });
 
 app.get('/timeout', function(req, res) {
