@@ -8,7 +8,7 @@ app.get('/', function(req, res){
   <html>
     <body>
       Hello, second version ! ${process.env.INSTANCE_NUMBER}
-      <img src="http://blackyoup.cellar-c2.services.clever-cloud.com/hltv.png" />
+      <img src="http://46.252.181.47:11083/blackyoup/hltv.png" />
     </body>
   </html>
 `);
