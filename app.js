@@ -52,10 +52,6 @@ app.get('/timeout', function(req, res) {
 
 setInterval(() => {
   console.log(process.env.INSTANCE_NUMBER, new Date().toISOString(), "ROOM");
-  const second = new Date().getSeconds();
-  if(second === 0) {
-    console.log("com.rabbitmq.client.ShutdownSignalException: connection error")
-  }
 }, 1000);
 
 app.listen(process.env.PORT);
