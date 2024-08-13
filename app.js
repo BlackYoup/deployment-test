@@ -51,9 +51,7 @@ app.get('/timeout', function(req, res) {
 })
 
 setInterval(() => {
-  for(let i = 0; i<50; i++) {
-    console.log(process.env.INSTANCE_NUMBER, new Date().toISOString(), "ROOM:", i);
-  }
+  console.log(process.env.INSTANCE_NUMBER, new Date().toISOString(), "ROOM");
 }, 1000);
 
 app.listen(process.env.PORT);
