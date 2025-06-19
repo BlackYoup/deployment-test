@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang=en-US>
+  <head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome Thales x Clever Cloud</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          const copyButton = document.querySelector('#copy-btn');
+          const copiedMessage = document.querySelector('.error-output');
+          const responseContent = document.querySelector('code#response-content');
+
+          copyButton.addEventListener('click', () => {
+              const text = responseContent.innerText;
+              navigator.clipboard.writeText(text).then(() => {
+                  copiedMessage.textContent = 'Copied to Clipboard';
+                  setTimeout(() => {
+                      copiedMessage.textContent = ' ';
+                  }, 5000);
+              });
+          });
+      });
+    </script>
+  <style>.content,section{align-self:center}:root{--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--justify-important:center;--bg-color:white;--width-content:1080px;--color-accent:#F1F0FB;--border-radius:0;--color-text:rgb(29, 29, 31);--color-code:#3a3871;--border-color:rgba(34, 36, 38, 0.15);--logo-color:#aaa}.content,body{flex-direction:column;display:flex}body,html{scroll-behavior:smooth;height:100%;-webkit-font-smoothing:antialiased;font-family:var(--font-family);background-color:var(--bg-color)}button#copy-btn,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media (prefers-color-scheme:dark){:root{--color-accent:rgba(184, 178, 251, 0.32);--border-color:rgba(65, 70, 74, 1);--bg-color:#111;--color-text:white;--color-code:white;--logo-color:#f1f0fb8d}}body{margin:0;padding:0;align-items:center;justify-content:center;color:var(--color-text)}.parse-error-display{padding:1em}span#p2{text-decoration-line:underline;text-decoration-color:red;text-decoration-style:wavy}span#p2::before{position:absolute;transform:translateY(1em);content:"";border:.5em solid transparent;border-bottom-color:red}.content{padding:0 20px;max-width:850px;width:100%;box-sizing:border-box}header p{font-size:calc(14px + 1 * ((100vw - 568px) / (768 - 568)))}h1 span{color:#888;font-weight:400}h1{border-bottom:1px solid var(--border-color);line-height:52px}section{text-align:center;display:flex;flex-direction:column}pre{display:flex;flex-flow:column wrap}pre code,pre samp{display:block;padding:1rem 2rem;max-width:850px;overflow-x:auto;border-width:0;border-radius:0}code{font-size:.8em;border-style:solid;word-break:break-word;border-width:1px;text-align:left;background-color:var(--color-accent);border-color:rgb(0 0 0/.04);border-radius:.375rem;color:var(--color-code);display:inline-block;margin:0 .1rem;padding:0 .5rem}button#copy-btn{color:rgb(107 114 128);background-color:rgb(255 255 255);border-radius:0;border:1px solid #e5e7eb}button#copy-btn:focus,button#copy-btn:hover{background-color:#e5e7eb}.float{position:absolute;top:10px;right:10px}.code-wrapper{position:relative;flex-direction:column;display:flex;width:100%}.error-output{display:flex;align-self:end;height:17px}.logo{position:fixed;left:22px;bottom:12px;z-index:1}.logo svg{margin-right:3px;fill:var(--logo-color)}.logo span{font-size:.95em;font-weight:700;color:var(--logo-color);position:relative;top:-.55em}.loader{width:100%;height:1px;display:block;position:relative;overflow:hidden;top:1px}.loader::after{content:'';width:42px;height:.8px;background:#888;position:absolute;top:0;left:0;box-sizing:border-box;animation:3s ease-in-out infinite alternate slider}@keyframes slider{0%{left:0;transform:translateX(-1%)}100%{left:100%;transform:translateX(-99%)}}</style>
+</head>
+  <body>
+    <div class="content">
+    <header>
+      <h1><span>Welcome</span> Thales TISP x Clever Cloud<span class="loader"></span></h1>
+      <h2>Introduction à la Plateforme Industrielle de Clever Cloud</h2>
+      <span>Chez Clever Cloud, nous sommes fiers de présenter notre plateforme industrielle de pointe, conçue pour optimiser et moderniser les opérations dans les sites industriels. Notre solution innovante est spécialement adaptée pour répondre aux besoins uniques des environnements industriels, offrant une flexibilité et une efficacité inégalées.</span>
+      <h3>Une Solution Robuste et Innovante</h3>
+      <div>
+        <span>Notre plateforme industrielle est construite pour offrir une performance exceptionnelle et une fiabilité à toute épreuve. Elle intègre les dernières technologies pour assurer une gestion fluide et sécurisée des processus industriels. Parmi ses nombreuses fonctionnalités, on retrouve :</span>
+      </div>
+
+      <div>
+          <span>
+
+              <ul>
+                  <li>Sécurité : Protégez vos données et vos opérations avec des protocoles de sécurité avancés.</li>
+                  <li>Automatisation : Optimisez vos processus grâce à des outils d&#39;automatisation intelligents.</li>
+                  <li>Analytique : Bénéficiez d&#39;analyses en temps réel pour prendre des décisions éclairées.</li>
+                  <li>Intégration dans les Sites Industriels de Thales TISP</li>
+              </ul>
+          </span>
+      </div>
+
+      <div>
+          <span>La plateforme industrielle de Clever Cloud est déjà opérationnelle dans plusieurs sites industriels de T, où elle a démontré son efficacité à améliorer la productivité et à réduire les temps d&#39;arrêt. En intégrant notre solution, les sites de T ont pu :</span>
+
+      </div>
+
+      <div>
+          <span><ul>
+              <li>Améliorer l&#39;efficacité opérationnelle : Grâce à une gestion optimisée des ressources et des processus.</li>
+              <li>Réduire les coûts : En minimisant les gaspillages et en optimisant l&#39;utilisation des ressources.</li>
+              <li>Renforcer la sécurité : Avec des mesures de sécurité robustes pour protéger les données et les opérations.</li>
+              <li>Bénéfices pour Nos Clients</li>
+          </ul>
+      </span>
+      </div>
+      <h3>En choisissant la plateforme industrielle de Clever Cloud</h3>
+      <span>Nos clients bénéficient de nombreux avantages, notamment :</span>
+      <div>
+          <ul>
+              <li>Une productivité accrue : Grâce à des processus optimisés et automatisés.</li>
+              <li>Une flexibilité inégalée : Pour s&#39;adapter rapidement aux changements et aux nouvelles exigences.</li>
+              <li>Un support technique dédié : Pour assurer une transition en douceur et un fonctionnement optimal.</li>
+          </ul>
+      </div>
+      <h3>Conclusion</h3>
+      <span>Nous invitons toutes les entreprises industrielles à découvrir les avantages de notre plateforme. Chez Clever Cloud, nous nous engageons à fournir des solutions innovantes qui transforment les opérations industrielles, assurant ainsi une croissance durable et une compétitivité accrue.</span>
+      <span>Pour en savoir plus sur notre plateforme industrielle et comment elle peut bénéficier à votre entreprise, contactez-nous dès aujourd&#39;hui.</span>
+      <span>N&#39;hésitez pas à me faire savoir si vous souhaitez ajouter ou modifier des détails spécifiques!</span>
+
+    </header>
+    </main>
+    <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 110 112"><polygon points="2.114 26.17 17.048 52.036 46.913 .305"/><polygon points="14.738 56.037 .382 31.171 .382 80.904"/><polygon points="20.511 58.035 50.379 109.769 80.247 58.035"/><polygon points="80.245 54.035 50.379 2.303 20.513 54.035"/><polygon points="86.02 56.037 100.376 80.904 100.376 31.171"/><polygon points="98.644 85.904 83.71 60.038 53.843 111.77 100.38 84.905 100.379 84.903"/><polygon points="83.71 52.036 98.644 26.17 100.379 27.172 100.38 27.171 53.843 .302"/><polygon points="17.048 60.038 2.114 85.904 .382 84.904 .382 84.905 46.915 111.77"/></svg><span>clever cloud</span></div>
+    </div>
+    <script>
+    (function reload() {
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4) {
+                xhr.getResponseHeader("X-CleverCloudUpgrade") != "true"
+                    ? window.location.reload()
+                    : setTimeout(reload, 2000);
+            }
+        };
+        xhr.open("GET", window.location.href);
+        xhr.send();
+    });
+    </script>
+  </body>
+</html>
+

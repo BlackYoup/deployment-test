@@ -3,9 +3,11 @@ const lodash = require("lodash");
 console.log('loadsh:', lodash);
 var app = express();
 
+// Serve static files from the root directory
+app.use(express.static(__dirname));
+
 app.get('/', function(req, res){
-  res.set('Content-Type', 'application/json');
-  res.send(JSON.stringify(req.headers));
+  res.sendFile(__dirname + '/index.html');
 //  res.send(`
 //  <html>
 //    <body>
